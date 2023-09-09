@@ -1,0 +1,70 @@
+/* body{
+    background: linear-gradient(to right, #92c3ca9a, #00ff00);
+} */
+input {
+    text-indent: 20px;
+}
+.home-text{
+    color: blueviolet;
+}
+.home-welcome{
+    color: #ff7700;
+}
+
+.map-container {
+    height: 200px;
+    position: relative;
+}
+
+.map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.home-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+.home-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.emp-profile{
+    margin-top: 4rem;
+}
+
+
+/* ############################## Page not Found ######################### */
+
+.Pagenotfound{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 130px 0px;
+    z-index: 999;
+    top: 5rem;
+}
+.notfound-404{
+    position: absolute;
+    right: 40rem;
+    bottom: 10px;
+    color: darkgray;
+    z-index: -1;
+}
+
+.notfound-404 h1{
+    font-size: 10rem;
+}
+
+.linkpage{
+    color: cadetblue;
+}
