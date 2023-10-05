@@ -5,10 +5,7 @@ const imageurl = 'https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-lo
 const Signup = () => {
   const navigate= useNavigate();
   const [user,setuser]=useState({
-    name: '',
     email: '',
-    phone:'',
-    work: '',
     password: '',
     cpassword: ''
   });
@@ -23,18 +20,18 @@ const Signup = () => {
 
   const sendData=async (e)=>{
     e.preventDefault();
-    const {name, email,phone, work,password,cpassword }=user;
-    const res=await fetch("/register",{
+    const {email,password,cpassword }=user;
+    const res=await fetch("/signup",{
       method:'POST',
       headers: {
         "Content-Type":"application/json"
       },
       body: JSON.stringify({
-        name, email, phone, work, password, cpassword
+        email, password, cpassword
       })
     });
     const data=await res.json();
-    if(data.status===422||!data)
+    if(res.status===422||!data)
     {
       window.alert("Invalid Registration")
       console.log("Invalid Registration")
@@ -42,7 +39,7 @@ const Signup = () => {
     else
     {
       window.alert("Register Successful")
-      console.log("Register Successful")
+      console.log("Register Successful",data,data.status)
       navigate("/login")
     }
   }
@@ -76,15 +73,6 @@ const Signup = () => {
                   <p className="text-center fw-bold mx-3 mb-0">Or</p>
                 </div>
 
-                {/* <!-- Name input --> */}
-                <div className="form-outline mb-3">
-                  <div className='content'>
-                    <i className="fa-solid fa-user icon"></i>
-                    <input type="text" id="form3Example4 name" name='name' autoComplete='off' onChange={handleInput} className="form-control form-control-lg"
-                     value={user.name} placeholder="Enter Name" />
-                  </div>
-                </div>
-
                 {/* <!-- Email input --> */}
                 <div className="form-outline mb-4">
                   <div className='content'>
@@ -93,24 +81,6 @@ const Signup = () => {
                      value={user.email} placeholder="Enter Email address" />
                   </div>
 
-                </div>
-
-                {/* <!-- Phone input --> */}
-                <div className="form-outline mb-3">
-                  <div className='content'>
-                    <i class="fa-solid fa-mobile phone icon"></i>
-                    <input type="phone" name='phone' id="form3Example4 phone" autoComplete='off' onChange={handleInput} className="form-control form-control-lg"
-                     value={user.phone} placeholder="Enter Phone" />
-                  </div>
-                </div>
-
-                {/* <!-- Profession input --> */}
-                <div className="form-outline mb-3">
-                  <div className='content'>
-                    <i class="fa-solid fa-regular fa-building icon"></i>
-                    <input type="text" id="form3Example4 work" name='work' autoComplete='off' onChange={handleInput} className="form-control form-control-lg"
-                     value={user.work} placeholder="Enter profession" />
-                  </div>
                 </div>
 
                 {/* <!-- Password input --> */}
@@ -128,7 +98,7 @@ const Signup = () => {
                   <div className='content'>
                     <i class="fa-solid fa-lock-open icon"></i>
                     <input type="password" id="form3Example4 cpassword" name='cpassword' autoComplete='off' onChange={handleInput} className="form-control form-control-lg"
-                    value={user.cpassword}  placeholder="ReEnter password" />
+                    value={user.cpassword}  placeholder="Confirm password" />
                   </div>
 
                 </div>
