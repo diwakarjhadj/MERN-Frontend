@@ -1,0 +1,41 @@
+
+.home-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.home-div{
+    display: flex;
+}
+
+.Explore-more {
+    background-color: #f3493d;
+  
+    color: #fff;
+}
+
+.btn-color {
+    margin: 0px 20px;
+    border-radius: 8%;
+    padding: 6px;
+    border: none;
+  }
+  .home-images{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+  }
+  .home-image{
+    width: 500px;
+    height: 500px;
+  }
+
+  .home-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+  }
+  

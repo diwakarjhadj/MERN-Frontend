@@ -12,7 +12,6 @@ const Signup = () => {
 
   let name, value;
   const handleInput= (e)=>{
-    console.log(e.target.value)
     name=e.target.name;
     value=e.target.value;
     setuser({...user,[name]:value})
@@ -34,12 +33,10 @@ const Signup = () => {
     if(res.status===422||!data)
     {
       window.alert("Invalid Registration")
-      console.log("Invalid Registration")
     }
     else
     {
       window.alert("Register Successful")
-      console.log("Register Successful",data,data.status)
       navigate("/login")
     }
   }

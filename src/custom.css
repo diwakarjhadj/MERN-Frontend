@@ -23,22 +23,13 @@ input {
     width: 100%;
     position: absolute;
 }
-.home-page{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10rem;
-}
-.home-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+
 
 .emp-profile{
     margin-top: 4rem;
 }
+
+
 
 
 /* ############################## Page not Found ######################### */
