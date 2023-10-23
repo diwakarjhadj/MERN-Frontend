@@ -51,7 +51,7 @@ const Loginform = () => {
                 {/* <!-- Email input --> */}
                 <div className="form-outline mb-4">
                     <div className='content'>
-                        <i class="fa-solid fa-envelope icon"></i>
+                        <i className="fa-solid fa-envelope icon"></i>
                         <input type="email" name="email" id="form3Example3 email" className="form-control form-control-lg"
                            autoComplete='off' value={email} onChange={(e)=>setemail(e.target.value)} placeholder="Enter a valid email address" />
                     </div>
@@ -60,7 +60,7 @@ const Loginform = () => {
                 {/* <!-- Password input --> */}
                 <div className="form-outline mb-3">
                     <div className='content'>
-                        <i class="fa-solid fa-key icon"></i>
+                        <i className="fa-solid fa-key icon"></i>
                         <input type="password" name="password" id="form3Example4 password" className="form-control form-control-lg"
                            autoComplete='off' value={password} onChange={(e)=> setPassword(e.target.value)} placeholder="Enter password" />
                     </div>
@@ -77,7 +77,7 @@ const Loginform = () => {
                     <a href="#!" className="text-body">Forgot password?</a>
                 </div>
 
-                <div class="text-center text-lg-start mt-4 pt-2">
+                <div className="text-center text-lg-start mt-4 pt-2">
                     <input type='submit' name='signin' id='signin' className="btn btn-primary btn-lg" style={{ paddingLeft: "2.5rem;", paddingRight: "2.5rem;" }} value='Login' onClick={loginUser} />
                     <p className="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <NavLink to="/signup"
                         className={"link-danger"}>Register</NavLink></p>

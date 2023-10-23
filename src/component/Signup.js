@@ -73,7 +73,7 @@ const Signup = () => {
                 {/* <!-- Email input --> */}
                 <div className="form-outline mb-4">
                   <div className='content'>
-                    <i class="fa-solid fa-envelope icon"></i>
+                    <i className="fa-solid fa-envelope icon"></i>
                     <input type="email" id="form3Example3" name="email" autoComplete='off' onChange={handleInput} className="form-control form-control-lg"
                      value={user.email} placeholder="Enter Email address" />
                   </div>
@@ -83,7 +83,7 @@ const Signup = () => {
                 {/* <!-- Password input --> */}
                 <div className="form-outline mb-3">
                   <div className='content'>
-                    <i class="fa-solid fa-key icon"></i>
+                    <i className="fa-solid fa-key icon"></i>
                     <input type="password" name='password' id="form3Example4 password" autoComplete='off' onChange={handleInput} className="form-control form-control-lg"
                      value={user.password} placeholder="Enter password" />
                   </div>
@@ -93,7 +93,7 @@ const Signup = () => {
                 {/* <!-- confirm Password input --> */}
                 <div className="form-outline mb-3">
                   <div className='content'>
-                    <i class="fa-solid fa-lock-open icon"></i>
+                    <i className="fa-solid fa-lock-open icon"></i>
                     <input type="password" id="form3Example4 cpassword" name='cpassword' autoComplete='off' onChange={handleInput} className="form-control form-control-lg"
                     value={user.cpassword}  placeholder="Confirm password" />
                   </div>
@@ -112,7 +112,7 @@ const Signup = () => {
                   <a href="#!" className="text-body">Forgot password?</a>
                 </div>
 
-                <div class="text-center text-lg-start mt-4 pt-2">
+                <div className="text-center text-lg-start mt-4 pt-2">
                   <input type='submit' name='signup' id='signup' className="btn btn-primary btn-lg" style={{ paddingLeft: "2.5rem;", paddingRight: "2.5rem;" }} value='Sign Up' onClick={sendData}/>
                   
                   <p className='small fw-bold mt-2 pt-1 mb-0'>Already have an account?<NavLink to="/login" className={'link-danger'}>Login</NavLink></p>
