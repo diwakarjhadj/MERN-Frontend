@@ -12,7 +12,17 @@ img{
 .owl-carousel .owl-dots.disabled {
     display: block;
 }
-
+.carousel-image {
+    transition: width 0.3s; /* Add a smooth transition effect */
+  
+    /* Define the initial width */
+    width: 100%;
+  
+    /* Add a hover effect to increase the width */
+    &:hover {
+      width: 120%; /* Adjust the width increase as desired */
+    }
+  }
 /* ################# Responsive ########################## */
 @media screen and (max-width: 900px) {
     .item{

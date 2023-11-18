@@ -76,7 +76,7 @@ const Carousel = () => {
         <OwlCarousel className="owl-theme" {...options}>
             {itemsArray.map((item) => (
                 <div className="item" key={item.id}>
-                    <img src={item.image} alt={item.text} />
+                    <img className="carousel-image" src={item.image} alt={item.text} />
                 </div>
             ))}
         </OwlCarousel>

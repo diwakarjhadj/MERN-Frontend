@@ -11,15 +11,15 @@
   width: 50%;
 }
 .Explore-more {
-    background-color: #f3493d;
-  
-    color: #fff;
-}
-.btn-color {
+   
     margin: 0px 20px;
     border-radius: 8%;
     padding: 6px;
     border: none;
+}
+.btn-color {
+  background-color: #f3493d;
+  color: #fff;
   }
   .home-images{
     display: flex;
@@ -37,10 +37,20 @@
     border-radius: 50%;
     object-fit: cover;
   }
+  .carousel-parent{
+    margin: 50px 0px;
+  }
   .carousel-component{
     margin: 50px 0px;
     cursor: pointer;
   }
+  .carousel-part{
+    margin: 50px 0px;
+  }
+  .cursor-pointer{
+    cursor: pointer;
+  }
+  
   /**************************** Responsive ************************/
 
   @media screen and (max-width: 767px) {

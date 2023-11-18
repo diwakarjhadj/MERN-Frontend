@@ -13,8 +13,8 @@ const Contact = () => {
 
           {/* <!--Google map--> */}
           <div id="map-container-google-1" className="z-depth-1 map-container mb-5">
-            <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-              style={{ border: "0px;" }} allowfullscreen></iframe>
+            <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0"
+              style={{ border: "0px" }} ></iframe>
           </div>
           {/* <!--Google Maps--> */}
 

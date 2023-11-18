@@ -1,0 +1,72 @@
+.main-div{
+    margin-top: 100px;
+}
+
+.sub-div1{
+    margin-top: 10px;
+}
+
+.sub-div2{
+    margin: 10px 0px;
+}
+.main-container{
+    display: flex;
+}
+.user-container{
+    width: 60%;
+    padding: 0px 5px;
+}
+.user2-container{
+    width: 40%;
+    padding: 300px 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.overview {
+    box-shadow: 0 4px 8px #3a3a4429, 0 8px 16px #5a5b6a29;
+    border-radius: 8px;
+    margin: 20px 0px;
+    padding: 10px 5px;
+}
+.faq{
+    font-size: 20px;
+}
+.faq .answer{
+    font-size: 14px;
+}
+.faq .question{
+    font-weight: 600;
+}
+
+.iframe-container{
+    position: relative;
+    width: 80%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  /* ######################################### Media- query ########################################### */
+
+  @media screen and (max-width: 750px) {
+    .main-container{
+        flex-direction: column;
+        margin: 15px;
+    }
+    .user-container{
+        width: 100%;
+        padding: 0px 5px;
+    }
+    .user2-container{
+        width: 100%;
+        padding: 0px 5px;
+    }
+}

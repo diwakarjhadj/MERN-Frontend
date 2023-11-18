@@ -113,7 +113,7 @@ const Signup = () => {
                 </div>
 
                 <div className="text-center text-lg-start mt-4 pt-2">
-                  <input type='submit' name='signup' id='signup' className="btn btn-primary btn-lg" style={{ paddingLeft: "2.5rem;", paddingRight: "2.5rem;" }} value='Sign Up' onClick={sendData}/>
+                  <input type='submit' name='signup' id='signup' className="btn btn-primary btn-lg" style={{ paddingLeft: "2.5rem", paddingRight: "2.5rem" }} value='Sign Up' onClick={sendData}/>
                   
                   <p className='small fw-bold mt-2 pt-1 mb-0'>Already have an account?<NavLink to="/login" className={'link-danger'}>Login</NavLink></p>
                 </div>

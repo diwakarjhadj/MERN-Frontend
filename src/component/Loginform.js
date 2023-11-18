@@ -78,7 +78,7 @@ const Loginform = () => {
                 </div>
 
                 <div className="text-center text-lg-start mt-4 pt-2">
-                    <input type='submit' name='signin' id='signin' className="btn btn-primary btn-lg" style={{ paddingLeft: "2.5rem;", paddingRight: "2.5rem;" }} value='Login' onClick={loginUser} />
+                    <input type='submit' name='signin' id='signin' className="btn btn-primary btn-lg" style={{ paddingLeft: "2.5rem", paddingRight: "2.5rem" }} value='Login' onClick={loginUser} />
                     <p className="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <NavLink to="/signup"
                         className={"link-danger"}>Register</NavLink></p>
                 </div>

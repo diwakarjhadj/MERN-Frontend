@@ -26,8 +26,16 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className='carousel-component'>
-          <Carousel />
+        <div className='carousel-parent'>
+          <h4>To Get the Latest videos <i className="fa-solid fa-angles-down"></i></h4>
+          <div className='carousel-component'>
+            <div className='carousel-part'>
+              <Carousel />
+            </div>
+          </div>
+          <div>
+          <h5 className='text-center cursor-pointer'> To Know About My Channel</h5>
+          </div>
         </div>
       </div>
     </>
